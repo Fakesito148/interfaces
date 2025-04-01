@@ -1,0 +1,99 @@
+html{
+
+    
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  body {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0), /* Parte superior transparente */
+        rgba(0, 0, 0, 1) /* Parte inferior oscura */
+    ),
+    url(../img/bulkmatic.jpg); /* Imagen de fondo */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 1;
+    top: 0;
+    text-align: center;
+}
+
+
+.texto h1{
+    font-size: 3rem;
+}
+.texto p{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.contenedor{
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffffc0;
+    border-radius: 10%;
+    padding: 1rem;
+    box-shadow: 10px 5px 5px #02020273;
+}
+
+.login a{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+.login button{
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.login button:hover{
+    border: solid #ffa500;
+    color: #ffa500;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.login img{
+    margin-top: 1rem;
+    width: 15rem
+}
+.campo{
+    display: flex;
+    margin-bottom: .5rem;
+    justify-content: center;
+}
+
+.error{
+    margin-left: 1rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .login{
+        padding: 3rem;
+        height: 15rem;
+    }
+    .texto h1{
+        font-size: 4rem;
+    }
+}
